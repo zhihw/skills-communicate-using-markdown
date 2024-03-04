@@ -11,7 +11,7 @@ The final program will output the file Echomorph.wav and play the file through s
 
 ### How to Run
 
-Please make sure the numpy scipy sounddevice library is installed before running
+Please make sure the nump, scipy, sounddevice Libraries are installed before running
 
 To run the program, use the following command in your terminal:
 
