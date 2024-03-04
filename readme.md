@@ -1,18 +1,19 @@
 # Introduction
 
 **Name:** Zhihao Wang  
-**Assignment:** Clipped Wave
+**Assignment:** Echomorph
 
 ## Purpose
 
-The goal of this project is to generate and play two types of audio waves: a sine wave and a clipped wave. 
-The sine wave generation uses a frequency of 440Hz and a sampling rate of 48000Hz with a duration of 1 second. 
-The program utilizes `scipy.io.wavfile.write` to write the generated wave to a file. 
-To create the clipped wave, it adjusts the amplitude and applies clipping before writing it to a file. Finally, the program uses `sounddevice` to play the generated waves.
+The program converts the input audio voice-note.wav into its echo-morphed version by using a variety of sound processing techniques,
+including 4th-order high-pass filter,normalization effect, clipping distortion effect, wet and dry mixer effect, and Simulate the echo effect through iteration. 
+The final program will output the file Echomorph.wav and play the file through sounddevice
 
 ### How to Run
+
+Please make sure the numpy scipy sounddevice library is installed before running
 
 To run the program, use the following command in your terminal:
 
 ```bash
-python wave.py
+python Echomorph.py
