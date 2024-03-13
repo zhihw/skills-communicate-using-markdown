@@ -1,19 +1,17 @@
 # Introduction
 
 **Name:** Zhihao Wang  
-**Assignment:** Echomorph
+**Assignment:** aleatoric
 
 ## Purpose
 
-The program converts the input audio voice-note.wav into its echo-morphed version by using a variety of sound processing techniques,
-including 4th-order high-pass filter,normalization effect, clipping distortion effect, wet and dry mixer effect, and Simulate the echo effect through iteration. 
-The final program will output the file Echomorph.wav and play the file through sounddevice
+This program continuously plays music measures (never stopping), with each measure consisting of 8 beats. The first beat is the root note of the minor scale, and the remaining 7 beats are tones randomly selected from notes 2 to 8 of the A4 (natural) minor scale. Each measure is played at a tempo of 220 beats per minute, with the root note's volume set at -3 dBFS and the rest at -6 dBFS. The program will save the first two measures to the current directory.
 
 ### How to Run
 
-Please make sure the nump, scipy, sounddevice Libraries are installed before running
+Please make sure the numpy, scipy, sounddevice Libraries are installed before running
 
 To run the program, use the following command in your terminal:
 
 ```bash
-python Echomorph.py
+python aleatoric.py
